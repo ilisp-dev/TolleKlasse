@@ -1,9 +1,11 @@
-public interface Klasse {
-
-    int schuelerAnzahl = 0;
-
-    KlassenNamen name = KlassenNamen.ERSTE;
-
-    void callAttendance(String[] schuelerNamen);
-
+//initiate the class
+public class Klasse {
+    //initiate the main method
+    public static void main(String[] args) {
+        //print each entry of KlassenNamen in a new line
+        for (KlassenNamen name : KlassenNamen.values()) {
+            System.out.println("Hallo " + name);
+        }
+        System.out.println("Liebe Grüße von Benjamin :)");
+    }
 }
